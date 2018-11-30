@@ -5,7 +5,7 @@ void launch_shell(int n)
 	int counter = 0;
 	do
 	{
-			print("NIDOS (");
+			print("insane-OS (");
 			print(int_to_string(n));
 			print(")> ");
 		    ch = readStr(); //memory_copy(readStr(), ch,100);
@@ -18,7 +18,7 @@ void launch_shell(int n)
 		    {
 		            clearScreen();
 		    }
-		    else if(strEql(ch,"sum"))
+		    else if(strEql(ch,"jog"))
 		    {
 		    	sum();
 		    }
@@ -26,11 +26,11 @@ void launch_shell(int n)
 		    {
 		    	print("\nGood Bye!\n");
 		    }
-		    else if(strEql(ch,"echo"))
+		    else if(strEql(ch,"likho"))
 		    {
 		    	echo();
 		    }
-		    else if(strEql(ch,"sort"))
+		    else if(strEql(ch,"shajao"))
 		    {
 		    	sort();
 		    }
@@ -38,28 +38,27 @@ void launch_shell(int n)
 		    {
 		    	fibonaci();
 		    }
-		    else if(strEql(ch,"gcd"))
+		    else if(strEql(ch,"goshagu"))
 		    {
 		    	gcd();
 		    }
-		    else if(strEql(ch,"help"))
+		    else if(strEql(ch,"shahajjo"))
 		    {
 		    	help();
 		    }
-		    else if(strEql(ch,"color"))
+		    else if(strEql(ch,"rong"))
 		    {
 		    	set_background_color();
 		    }
-		    else if(strEql(ch,"multiply"))
+		    else if(strEql(ch,"gun"))
 		    {
 		    	multiply();
 		    }
 		    
-		    
 		    else
 		    {
-		            print("\nBad command!\n");
-		            print("NIDOS> ");
+		            print("\nKharap comman!\n");
+		            print("insane-OS> ");
 		    } 
 	} while (!strEql(ch,"exit"));
 }
@@ -68,14 +67,14 @@ void launch_shell(int n)
 
 void sum()
 {
-	print("\nHow many numbers: ");
+	print("\nKoeti shongkha: ");
 	int n = str_to_int(readStr());
 	int i =0;
 	print("\n");
 	int arr[n];
 	fill_array(arr,n);
 	int s = sum_array(arr,n);
-	print("Result: ");
+	print("Folafol: ");
 	print(int_to_string(s));
 	print("\n");
 }
@@ -94,12 +93,12 @@ void sort()
 	int n = str_to_int(readStr());
 	print("\n");
 	fill_array(arr,n);
-	print("Before sorting:\n");
+	print("Sorting er age:\n");
 	print_array(arr,n);
 	print("\nOrdre: (1 for increassing/ 0 for decreassing): ");
 	int ordre = str_to_int(readStr());
 	insertion_sort(arr,n,ordre);
-	print("\nAfter sorting:\n");
+	print("\nSortinger pore:\n");
 	print_array(arr,n);
 }
 
@@ -155,7 +154,7 @@ int sum_array(int arr[],int n)
 }
 void fibonaci()
 {
-	print("\nHow many Elements: ");
+	print("\nElements er shongkha: ");
 	int n = str_to_int(readStr()); 
 	print("\n");
 	int i = 0;
@@ -187,7 +186,7 @@ int gcd_couple(int a,int b)
 }
 void gcd()
 {
-	print("\nHow many numbers: ");
+	print("\nKoeti number: ");
 	int n = str_to_int(readStr());
 	int i =0;
 	print("\n");
@@ -206,7 +205,7 @@ void gcd()
 			matrix[i][j] = gcd_couple(matrix[i-1][j] , matrix[i-1][j+1]);
 		}
 	}
-	print("Result: ");
+	print("Folafol: ");
 	print(int_to_string(matrix[n-1][0]));
 	print("\n");
 }
@@ -226,7 +225,7 @@ void print_matrix(int matrix[][100],int rows,int cols)
 }
 void set_background_color()
 {
-	print("\nColor codes : ");
+	print("\Ronger codes : ");
 	print("\n0 : black");
 	print_colored("\n1 : blue",1,0);   // screen.h
 	print_colored("\n2 : green",2,0);
@@ -265,15 +264,15 @@ void multiply()
 
 void help()
 {
-	print("\ncmd       : Launch a new recursive Shell");
-	print("\nclear     : Clears the screen");
-	print("\nsum       : Computes the sum of n numbers");
-	print("\necho      : Reprint a given text");
-	print("\nsort      : Sorts a given n numbers");
-	print("\nfibonaci  : Prints the first n numbers of fibonaci");
-	print("\ngcd       : Computes the grand common divider of n given numbers");
-	print("\nexit      : Quits the current shell");
-	print("\ncolor     : Changes the colors of the terminal");
+	print("\ncmd       : Notun shell toiri");
+	print("\nclear     : Screen Porishkar");
+	print("\nsum       : Jogfol ber kora");
+	print("\necho      : Abar lekha");
+	print("\nsort      : Numbers Shajano");
+	print("\nfibonaci  : Prothom n numbers print kora");
+	print("\ngcd       : Goshagu ber kora");
+	print("\nexit      : Ber houa");
+	print("\ncolor     : Rong poriborton kora");
 	
 	print("\n\n");
 }
