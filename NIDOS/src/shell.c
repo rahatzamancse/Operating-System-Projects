@@ -57,7 +57,7 @@ void launch_shell(int n)
 		    
 		    else
 		    {
-		            print("\nKharap comman!\n");
+		            print("\nKharap command!\n");
 		            print("insane-OS> ");
 		    } 
 	} while (!strEql(ch,"exit"));
@@ -266,14 +266,14 @@ void help()
 {
 	print("\ncmd       : Notun shell toiri");
 	print("\nclear     : Screen Porishkar");
-	print("\nsum       : Jogfol ber kora");
-	print("\necho      : Abar lekha");
-	print("\nsort      : Numbers Shajano");
+	print("\njog       : Jogfol ber kora");
+	print("\nlikho     : Abar lekha");
+	print("\nshajao    : Numbers Shajano");
 	print("\nfibonaci  : Prothom n numbers print kora");
-	print("\ngcd       : Goshagu ber kora");
+	print("\ngoshagu   : Goshagu ber kora");
 	print("\nexit      : Ber houa");
-	print("\ncolor     : Rong poriborton kora");
+	print("\nrong      : Rong poriborton kora");
+	print("\ngun       : GUN korbo");
 	
 	print("\n\n");
 }
-
